@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Label from './component/Label';
+import Input from './component/Input';
+import Button from './component/Button';
 
 class App extends Component {
   constructor(props) {
