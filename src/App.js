@@ -28,7 +28,7 @@ class App extends Component {
           message = "Please input the correct format";
         }
       }else{
-        if(inputAmount.indexOf("Rp ") == 0){
+        if(inputAmount.indexOf("Rp ") === 0){
           inputAmount = inputAmount.replace('Rp ','');
           if(!inputAmount.match(/\s/) && !inputAmount.match(/0000/g)){
             if(inputAmount.match(/^[1-9]\d*(\.\d+)?$/) && inputAmount.match(/^[0-9][0-9.]*[0-9]\,?[0-9]{0,2}$/)){
@@ -39,7 +39,7 @@ class App extends Component {
                 formIsValid = true;
               }
             }else{
-              if(inputAmount.indexOf(",00") == (inputAmount.length-3)){
+              if(inputAmount.indexOf(",00") === (inputAmount.length-3)){
                 formIsValid = true;
               }else{
                 formIsValid = false;
