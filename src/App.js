@@ -80,11 +80,11 @@ class App extends Component {
         if(inputAmount < 100 && inputAmount > 0){
           result += "sisa = " + inputAmount;
         }
-        this.setState({
-          resultConvert: result
-        });
       }
     }
+    this.setState({
+      resultConvert: result
+    });
   }
 
   handleChange(e) {
